@@ -10,11 +10,20 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="outer-nav-link-container">
       <div class="first-nav-row">
-        <a href="./index.html" class="logo">Apple Airpods Max</a>
+        <a href="./index.html" class="logo"
+          ><i class="fa-brands fa-apple"></i
+        ></a>
         <a href="#">Store</a>
         <a href="#">Mac</a>
         <a href="#">iPad</a>
@@ -33,11 +42,13 @@
       </div>
     </nav>
     <section class="first-page">
-      <!-- <h1>AirPods Max</h1> -->
+      <div class="first-page-text">
+        <h1 class="image-text">AirPods Max</h1>
+      </div>
       <picture class="container-picture">
         <img
           class="intro-image"
-          src="./images/AIRPODS_RENDER_WHITE_POSE_2.png"
+          src="./images/AIRPODS_RENDER_WHITE_POSE_1.png"
         />
       </picture>
       <h2>
@@ -45,6 +56,28 @@
         high-fidelity audio and the effortless magic of AirPods. The ultimate
         personal listening experience is here.
       </h2>
+    </section>
+    <!--2nd Page-->
+    <section class="second-page">
+      <video
+        src="./images/intro-video.mp4"
+        autoplay
+        muted
+        loop
+        class="motion-video"
+      ></video>
+      <div class="second-page-text">
+        <p class="text-container">
+          <span class="highlight-text">High-fidelity audio.</span>
+          <span class="highlight-text"
+            >Industrial design with exceptional build quality.</span
+          >
+          <span class="highlight-text"
+            >Personalized Spatial Audio for real-like sound that captures
+            you.</span
+          >
+        </p>
+      </div>
     </section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
@@ -58,6 +91,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script scr="./app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
